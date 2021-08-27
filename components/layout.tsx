@@ -8,7 +8,7 @@ import utilstyles from '../styles/utils.module.scss'
 export const siteTitle = 'Next.js Sample Website'
 const name = "Henry Lee"
 
-export default function layout({children, home}) {
+export default function layout({children, home} : {children : React.ReactNode, home? : boolean}) {
     return (
         <div className={styles.container}>
             <Head>
